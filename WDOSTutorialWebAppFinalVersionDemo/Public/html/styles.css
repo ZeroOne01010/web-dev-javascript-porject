@@ -1,0 +1,19 @@
+
+.hidden {
+        display: none;
+}
+
+label {
+        margin-right: 1em;
+        width: 4em;       
+}
+
+#output {
+        height: 6em;
+        border: black solid 3px;
+        width: 30em;
+}
+
+fieldset {
+        width: 28em;
+}

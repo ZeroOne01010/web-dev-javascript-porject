@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Milkshake store ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fc03ca">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main-jarvis.js" defer></script>
+    <title>Milkshake and smoothie website</title>
+</head>
+
+<body>
+    <form id="drinkForm">
+        <p id="para1">
+            Welcome to Brian Bevvies smoothie and milkshake online ordering portal
+        </p>
+
+        <p id="para2">
+            Please select what type of drink you would like
+        </p>
+
+        <div id="selection">
+            <!--Drink Type Selection-->
+            <fieldset>
+                <legend>Type of drink</legend>
+                <div>
+                    <input type="radio" id="smoothie" name="Type of drink" class="checkBox" value="smoothie">
+                    <label for="smoothie">smoothie</label>
+                </div>
+                <div>
+                    <input type="radio" id="milkshake" name="Type of drink" class="checkBox" value="milkshake">
+                    <label for="milkshake">milkshake</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <p id="para3">
+            Please select which size you would like
+        </p>
+
+        <!--Size Selection-->
+        <fieldset>
+            <div>
+                <label>Drink size</label>
+                <div>
+                    <input type="radio" id="small" name="size" class="checkBox" value="small">
+                    <label for="small">Small £2.70</label>
+                </div>
+                <div>
+                    <input type="radio" id="medium" name="size" class="checkBox" value="medium" checked>
+                    <label for="medium">Medium £3.20</label>
+                </div>
+                <div>
+                    <input type="radio" id="large" name="size" class="checkBox" value="large">
+                    <label for="large">Large £3.70</label>
+                </div>
+                <div>
+                    <input type="radio" id="extraLarge" name="size" class="checkBox" value="extra large">
+                    <label for="extraLarge">Extra Large £4.50</label>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <!--Ingredients Selection-->
+        <p id="para4">
+            Please select any ingredients
+        </p>
+        <fieldset>
+            <legend>select an ingredient</legend>
+            <div>
+                <input type="checkbox" id="banana" name="ingredient" class="checkBox" value="banana">
+                <label for="banana">banana</label>
+            </div>
+            <div>
+                <input type="checkbox" id="raspberry" name="ingredient" class="checkBox" value="raspberry">
+                <label for="raspberry">raspberry</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cranberry" name="ingredient" class="checkBox" value="cranberry">
+                <label for="cranberry">cranberry</label>
+            </div>
+            <div>
+                <input type="checkbox" id="strawberry" name="ingredient" class="checkBox" value="strawberry">
+                <label for="strawberry">strawberry</label>
+            </div>
+            <div>
+                <input type="checkbox" id="chocolate" name="ingredient" class="checkBox" value="chocolate">
+                <label for="chocolate">chocolate</label>
+            </div>
+        </fieldset>
+
+        <div id="smoothieElements" class="hidden">
+            <p id="para5">
+                Please enter a base for your smoothie
+            </p>
+
+            <!--smoothie base Selection-->
+            <fieldset>
+                <legend>select a base for your smoothie</legend>
+                <div>
+                    <input type="radio" id="Apple juice" name="smoothieBase" class="checkBox" value="Apple juice">
+                    <label for="Apple juice">Apple juice</label>
+                </div>
+                <div>
+                    <input type="radio" id="orange juice" name="smoothieBase" class="checkBox" value="orange juice"
+                        checked>
+                    <label for="orange juice">orange juice</label>
+                </div>
+            </fieldset>
+        </div>
+
+
+        <div id="milkshakeElements" class="hidden">
+            <p id="para6">
+                Please enter a base for your milkshake
+            </p>
+
+            <!--milkshake base Selection-->
+            <fieldset>
+                <legend>Select a base for your milkshake</legend>
+                <div>
+                    <input type="radio" id="Whole milk" name="milkshakeBase" class="checkBox" value="Whole milk">
+                    <label for="Whole milk">Whole milk</label>
+                </div>
+                <div>
+                    <input type="radio" id="semi-skimmed milk" name="milkshakeBase" class="checkBox"
+                        value="semi-skimmed milk">
+                    <label for="semi-skimmed milk">semi-skimmed milk</label>
+                </div>
+                <div>
+                    <input type="radio" id="skimmed milk" name="milkshakeBase" class="checkBox" value="skimmed milk"
+                        checked>
+                    <label for="skimmed milk">skimmed milk</label>
+                </div>
+                <div>
+                    <input type="radio" id="coconut milk" name="milkshakeBase" class="checkBox" value="coconut milk">
+                    <label for="coconut milk">coconut milk</label>
+                </div>
+                <div>
+                    <input type="radio" id="oat milk" name="milkshakeBase" class="checkBox" value="oat milk">
+                    <label for="oat milk">oat milk</label>
+                </div>
+            </fieldset>
+
+
+
+            <p id="para7">
+                Please add any extra toppings you would like for your milkshake
+            </p>
+
+            <!--topping Selection-->
+            <fieldset>
+                <legend>select toppings for your milkshake</legend>
+                <div>
+                    <input type="checkbox" id="malt" name="topping" class="checkBox" value="malt">
+                    <label for="malt">malt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="marshmallows" name="topping" class="checkBox" value="marshmallows">
+                    <label for="marshmallows">marshmallows</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whipped cream" name="topping" class="checkBox" value="whipped cream">
+                    <label for="marshmallows">whipped cream</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="a flake" name="topping" class="checkBox" value="a flake">
+                    <label for="a flake">a flake</label>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <!--current cost-->
+        <fieldset>
+            <div id="Cost">
+                <p>Cost of Current drink: £<span id="total">0.00</span></p>
+            </div>
+        </fieldset>
+        <!--summary of drinks-->
+        <fieldset>
+            <legend>Drinks list</legend>
+            <div id="Summary of drinks">
+                <p><span id="Summary"></span></p>
+            </div>
+        </fieldset>
+        <!--total cost-->
+        <fieldset>
+            <legend>Order total</legend>
+            <div id="total-box">
+                <p>£<span id="totalOrder">0.00</span></p>
+            </div>
+        </fieldset>
+        <!--process order-->
+        <fieldset>
+            <div id="form buttons">
+                <button id="AddToOrder" type="button">Add drink</button>
+                <button id="Process order" type="button">Process order</button>
+            </div>
+        </fieldset>
+        <!--favourites-->
+        <fieldset>
+            <div id="favourites buttons">
+                <button id="saveFavourite" type="button">Save favourite</button>
+                <button id="orderFavourite" type="button">Order my favourite</button>
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
